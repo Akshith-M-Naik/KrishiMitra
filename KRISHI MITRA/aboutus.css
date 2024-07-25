@@ -1,0 +1,188 @@
+:root {
+    --color: rgb(44, 128, 44);
+    --seccolor: rgb(169, 191, 169);
+}
+
+body {
+    background-color: var(--seccolor);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.nav {
+    background-color: var(--color);
+    color: white;
+    border: 1px solid var(--color);
+    font-family: "Segoe UI";
+    height: 40px;
+}
+
+.nav ul {
+    display: flex;
+    justify-content: start;
+    gap: 40px;
+    align-items: start;
+}
+
+.nav ul li {
+    list-style-type: none;
+    font-size: 1.5em;
+}
+.nav ul li a{
+    color: white;
+    text-decoration: none;
+} 
+.images{
+    width: 1000px;
+    height: 500px;
+    transition: transform 0.2s ease-in-out;
+}
+.images:nth-child(n + 2) {
+    display: none; /* Hide images starting from the fourth image */
+}
+
+.margin{
+    /* margin-top: -40px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    padding: 50px 0px 0px 0px;
+    gap: 95px;
+    width: calc((400px + 95px) * 3);
+}
+.floating{
+    border: 1px solid rgb(150 142 47);
+    margin-left: 151.5px;
+    height: 57px;
+    background-color:rgb(150 142 47);
+    p:hover{
+        color: black;
+    }
+    overflow: hidden;
+}
+   
+.news{
+    color:white;
+    font-size: 20px;
+    animation-play-state:running;
+    animation: tranding 20s linear infinite reverse;
+}
+@keyframes tranding{
+    from{
+        transform: translateX(-1445px);
+    }
+    to{
+       transform: translateX(1445px); 
+    }
+}
+.details{
+    display: flex;
+    justify-content: space-around;
+}
+footer {
+    background-color: #505050;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    bottom: 0;
+    width: 100%;
+}
+.header{
+    color: var(--color);
+    font-size: 30px;
+    font-weight: 550;
+    margin: 10px 0px 10px 0px;
+    text-decoration: underline;
+}
+.sub{
+    color: var(--color);
+    font-size: 20px;
+}
+hr{
+   border-top: 1px dashed var(--color);
+}
+
+.profile{
+    object-fit: cover;
+    border: 1px solid rgb(150 142 47);
+    border-radius: 100px;
+    width: 37px;
+    height: 37px;
+    position: absolute;
+    right: 10px;
+    img:hover{
+        
+    }
+}
+
+.pre-btn,
+.nxt-btn {
+    border: none;
+    width: 30px; /* Adjust button width */
+    height: 30px; /* Adjust button height */
+    position: absolute;
+    background-color: var(--color); /* Set button background color */
+    cursor: pointer;
+    z-index: 8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%; /* Make button circular */
+    transition: background-color 0.3s ease; /* Smooth transition on hover */
+}
+
+.pre-btn {
+    left: 20px; /* Adjust position of the previous button */
+}
+
+.nxt-btn {
+    right: 20px; /* Adjust position of the next button */
+}
+
+.pre-btn img,
+.nxt-btn img {
+    opacity: 0.8; /* Reduce opacity of button icon */
+}
+
+.pre-btn:hover,
+.nxt-btn:hover {
+    background-color: var(--seccolor); /* Change button background color on hover */
+}
+
+.pre-btn:hover img,
+.nxt-btn:hover img {
+    opacity: 1; /* Increase opacity of button icon on hover */
+}
+
+
+/* Heading Styles */
+.section h2 {
+    font-size: 2em;
+    color: #000000;
+    text-decoration: underline;
+}
+
+/* Paragraph Styles */
+.section p {
+    font-size: 1.6em;
+    line-height: 1.6;
+}
+
+/* Unordered List Styles */
+.section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 1.6em;
+}
+.section h3{
+    color: #505050;
+    font-size: 25px;
+}

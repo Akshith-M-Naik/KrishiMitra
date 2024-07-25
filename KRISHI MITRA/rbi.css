@@ -1,0 +1,143 @@
+:root {
+    --color: rgb(44, 128, 44);
+    --seccolor: rgb(169, 191, 169);
+}
+
+body {
+    background-color: var(--seccolor);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.nav {
+    background-color: var(--color);
+    color: white;
+    border: 1px solid var(--color);
+    font-family: "Segoe UI";
+    height: 40px;
+}
+
+.nav ul {
+    display: flex;
+    justify-content: start;
+    gap: 40px;
+    align-items: start;
+}
+
+.nav ul li {
+    list-style-type: none;
+    font-size: 1.5em;
+}
+.nav ul li a{
+    color: white;
+    text-decoration: none;
+} 
+
+.profile{
+    object-fit: cover;
+    border: 1px solid rgb(150 142 47);
+    border-radius: 100px;
+    width: 37px;
+    height: 37px;
+    position: absolute;
+    right: 10px;
+    img:hover{
+        
+    }
+}
+
+
+.floating{
+    border: 1px solid rgb(150 142 47);
+    margin-left: 151.5px;
+    height: 57px;
+    background-color:rgb(150 142 47);
+    p:hover{
+        color: black;
+    }
+    overflow: hidden;
+}
+   
+.news{
+    color:white;
+    font-size: 20px;
+    animation-play-state: running;
+    animation: tranding 20s linear infinite reverse;
+}
+@keyframes tranding{
+    from{
+        transform: translateX(-1445px);
+    }
+    to{
+       transform: translateX(1445px); 
+    }
+}
+.details{
+    display: flex;
+    justify-content: space-around;}
+   
+footer {
+    background-color: #505050;
+    color: #fff;
+    text-align: center;
+    padding: 5px ;
+    width: 100%;
+}
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: 'Arial', sans-serif; /* Specify a stylish font family */
+}
+
+.head {
+    color: #333;
+    font-size: 36px; /* Larger font size */
+    margin-bottom: 30px;
+}
+
+p {
+    margin-bottom: 20px;
+    line-height: 1.6;
+    font-size: 18px; /* Larger font size */
+    color: #555; /* Stylish font color */
+}
+
+ul {
+    list-style-type: disc;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 20px;
+}
+
+input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+button {
+    padding: 12px 24px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 16px; /* Larger font size */
+}
+
+button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+

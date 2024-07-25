@@ -1,0 +1,48 @@
+:root {
+    --color: rgb(85, 143, 85);
+    --seccolor: rgb(140, 169, 140);
+}
+
+body {
+    background-color: var(--seccolor);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 30px;
+    border: 1px solid var(--color);
+    border-radius: 5px;
+    background-color: var(--color);
+
+}
+
+input[type="text"], button {
+    display: block;
+    margin-bottom: 10px;
+    width: 90%;
+    padding: 10px;
+}
+
+button {
+    background-color:  var(--seccolor);
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(130, 212, 130);
+}
+.container h1{
+    text-align: center;
+}
+.container button a{
+    color: black;
+    text-decoration: none;
+}
