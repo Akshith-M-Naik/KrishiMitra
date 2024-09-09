@@ -1,0 +1,146 @@
+:root {
+    --color: rgb(44, 128, 44);
+    --seccolor: rgb(169, 191, 169);
+}
+
+body {
+    background-color: var(--seccolor);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.nav {
+    background-color: var(--color);
+    color: white;
+    border: 1px solid var(--color);
+    font-family: "Segoe UI";
+    height: 40px;
+}
+
+.nav ul {
+    display: flex;
+    justify-content: start;
+    gap: 40px;
+    align-items: start;
+}
+
+.nav ul li {
+    list-style-type: none;
+    font-size: 1.5em;
+}
+.nav ul li a{
+    color: white;
+    text-decoration: none;
+}
+
+.thought {
+    position: absolute;
+    top: 164px;
+    left: 60px;
+    font-family: 'Poppins','Roboto Condensed', sans-serif;
+    font-weight: 800;
+    font-size: 50px;
+    color: #125612;
+}
+.floating{
+    border: 1px solid rgb(150 142 47);
+    margin-left: 151.5px;
+    height: 57px;
+    background-color:rgb(150 142 47);
+    p:hover{
+        color: black;
+    }
+    overflow: hidden;
+}
+   
+.news{
+    color:white;
+    font-size: 20px;
+    animation-play-state: running;
+    animation: tranding 20s linear infinite reverse;
+}
+@keyframes tranding{
+    from{
+        transform: translateX(-1450px);
+    }
+    to{
+       transform: translateX(1450px); 
+    }
+}
+
+footer {
+    background-color: #505050;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    bottom: 0;
+    width: 100%;
+}
+.details{
+    display: flex;
+    justify-content: space-around;
+}
+
+.profile{
+    object-fit: cover;
+    border: 1px solid rgb(150 142 47);
+    border-radius: 100px;
+    width: 37px;
+    height: 37px;
+    position: absolute;
+    right: 10px;
+    /* img:hover{
+        
+    } */
+}
+.container{
+    display: grid;
+    gap: 20px;
+    padding: 0px 300px 0px 300px;
+}
+.head1{
+    color: rgb(13, 45, 31);
+    text-decoration:underline ;
+    font-size: 50px;
+}
+.head2{
+    color: rgb(13, 85, 31);
+    text-decoration: underline;
+    font-size: 40px;
+    font-family: 'Montserrat', sans-serif;
+
+
+}
+.p1{
+    color:black;
+    font-size: 30px;
+    font-family: 'Open Sans', sans-serif;
+
+}
+.points{
+    font-size: 30px;
+    font-family: 'Open Sans', sans-serif;
+
+}
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cta-button {
+    margin-top: 10px;
+    padding: 8px 16px;
+    background-color: #4CAF50;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 10px;
+    width:100px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #1a671e;
+}
