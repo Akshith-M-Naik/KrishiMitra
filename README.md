@@ -1,6 +1,6 @@
 # Krishimitra: Empowering Farmers, Enabling Investments
 
-![Krishimitra Logo Placeholder](https://placehold.co/600x200/228B22/FFFFFF?text=Krishimitra+Logo)
+![Krishimitra Logo](public/photos/logo1.png)
 
 Krishimitra is a web platform dedicated to bridging the gap between farmers seeking financial support and investors looking for meaningful opportunities in the agricultural sector. Our mission is to foster sustainable growth, empower rural communities, and unlock the full potential of agricultural land.
 
